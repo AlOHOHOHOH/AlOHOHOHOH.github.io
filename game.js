@@ -41,7 +41,7 @@ var Game = (function() {
 
     instance.fixedUpdate = function() {
         var currentTime = new Date().getTime();
-        var delta = (currentTime - this.lastFixedUpdate) / 1000;
+        var delta = (currentTime - this.lastFixedUpdate) / 100;
         this.lastFixedUpdate = currentTime;
 
         refreshPerSec(delta);
